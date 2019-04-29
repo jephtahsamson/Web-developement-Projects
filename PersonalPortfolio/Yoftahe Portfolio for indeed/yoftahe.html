@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/yoftahe.css">
+    <link rel="stylesheet" href="CSS/skillStyle.css">
+  
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
+    
+    <meta charset="utf-8">
+    <title>Yoftahe Hagos Portfolio</title>
+  </head>
+
+  <body>
+    <div class="welcome-section" id="home">
+      <nav class="welcome-section__navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        
+        </ul>
+      </nav>
+      <div class="welcome-section__image-container">
+        <div class="header-text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main">Hello, I'm <span class="yoftahe">Yoftahe</span></span>
+            <span class="heading-primary--sub">I am a Self Tought Software Designer Located in Vancouver</span>
+          </h1>
+        </div>
+      </div>
+
+      <!--ANIMATED INTRODUCTION TEXT LIKE HELLO I AM YOFTAHE....-->
+      <h1 >
+          <a style="text-decoration: none; color: rgb(0, 0, 0); font-family: 'Special Elite', cursive;" href="" class="typewrite" data-period="5000"
+           data-type='[ "Hi, Im Yoftahe.", "I am a self tought Programmer and Designer.", "I love Math and " ]'>
+            <span class="wrap"></span>
+          </a>
+      </h1>
+    </div>
+
+    <!-- ABOUT HEADER-->
+    <div class="aboutMe-header" id="about">
+      <h1>about me</h1>
+    </div>
+    
+    <!-- ABOUT CONTAINER BOX-->
+    <div class="aboutMe-box">
+
+      <!-- TEXT-BOX-->
+      <div class="aboutMe__text-box">
+        <p>
+          I am  recent highschool graduate(june 2018), and I have been teaching myself Web programming for full time, ever scince I completed my highschool diploma. My intial plan was to attend a university or college on computer science major.  After I have been accepted to a college, later I found out that I can teach myself any coding skill using such awseome, almost free, online resourses.  
+        </p>
+        <p>
+          I am a very self-desciplined and motivated person, I just love building cool stuff while also aiming to solve real world problems. I'm looking for an intern or junior positions  where I can expand and grow my basic programming knowlege.
+        </p>
+        <a target="_blank" href="https://github.com/jephtahsamson/Git-Test/blob/master/Yoftahe%20RESUME.pdf">Résumé</a>
+      </div>
+
+      <!--SKILL BOX-->
+      <div class="aboutMe__skill-box">
+        <div class="tab">
+          <button class="tablinks" onclick="openExpertise(event, 'Skills')">Skills</button>
+          <button class="tablinks" onclick="openExpertise(event, 'BackEnd')">Back End</button>
+          <button class="tablinks" onclick="openExpertise(event, 'FrontEnd')">Front End</button>
+          <button class="tablinks" onclick="openExpertise(event, 'Tools')">Tools</button>   
+        </div>
+
+        <!--ANIMATED SKILLS BAR-->
+
+        <!--SKILLS-->
+        <div id="Skills" class="tabcontent">
+         <h3>Skills</h3>
+         <ul class="design-skills">
+           <li>Object Oriented Design</li>
+           <li>Responsive Web Design</li>
+         </ul>
+        </div>
+
+        <!--BACK-END SKILLS-->
+        <div id="BackEnd" class="tabcontent">
+          <h3>BackEnd</h3>
+          <ul style="list-style: none;">
+            <li><img class="langLogo" src="img/c.png" alt=""><span class="bar"><span class="c"></span></span></li>
+            <li><img class="langLogo" src="img/python.png" alt=""><span class="bar"><span class="python"></span></span></li>
+            <li><img class="langLogo" src="img/java.svg" alt=""><span class="bar"><span class="java"></span></span></li>
+            <li><img class="langLogo" src="img/node.png" alt=""><span class="bar"><span class="node"></span></span></li>
+            <li><img class="langLogo" src="img/redux.png" alt=""><span class="bar"><span class="redux"></span></span></li>
+          </ul>
+        </div>
+
+        <!--FRONT-END SKILLS-->
+        <div id="FrontEnd" class="tabcontent">
+          <h3>FrontEnd</h3>
+          <ul style="list-style: none;">
+            <li><img class="langLogo" src="img/html.png" alt=""><span class="bar"><span class="html"></span></span></li>
+            <li><img style="width: 55px;" class="langLogo"src="img/sass.svg" alt=""><span class="bar"><span class="sass"></span></span></li>
+            <li><img class="langLogo" src="img/bootstrap.svg" alt=""><span class="bar"><span class="bootstrap"></span></span></li>
+            <li><img class="langLogo" src="img/react.png" alt=""><span class="bar"><span class="react"></span></span></li>
+            <li><img class="langLogo" src="img/js.jpg" alt=""><span class="bar"><span class="javaScript"></span></span></li>
+          </ul>
+        </div>
+
+        <!--TOOLS AND EDITORS-->
+        <div id="Tools" class="tabcontent">
+          <h3>Tools</h3>
+          <ul style="list-style: none;">
+            <li><img class="langLogo" src="img/Git.png" alt=""><span class="bar"><span class="git"></span></span></li>
+            <li><img class="langLogo" src="img/github.png" alt=""><span class="bar"><span class="gitHub"></span></span></li>
+            <li><img class="langLogo" src="img/vs.png" alt=""><span class="bar"><span class="vsCode"></span></span></li>
+            <li><img class="langLogo" src="img/atom.png" alt=""><span class="bar"><span class="atom"></span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="work" class="about">
+      <h1>WORK</h1>
+    </div>
+    <div id="projects">
+      <div class="project-title">
+        
+        <a href="https://google.com">
+        <figure>
+            <img class="project-item" src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/295720.JdypaP.0ac369fa-0be6-4544-9666-74a8fe8d91be.png" alt="">
+          </figure>
+        
+        </a>
+        
+        
+        <h3>Pomodoro Clock</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="https://edge.androidcommunity.com/wp-content/uploads/2016/02/Sony-Weather-app-for-Xperia.jpg" alt="">
+
+        </figure>
+        <h3>Weather Application</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="https://static.collectui.com/shots/2884714/easy-notes-app-large" alt="">
+        </figure>
+        <h3>Simple To Do List</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="https://snipui.com/wp-content/uploads/Calculator-DailyUI-004-sn.png" alt="">
+       
+        </figure>
+        <h3>javaScript Calculator</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="https://www.coralthemes.com/wp-content/uploads/coral-dark-preview.png" alt="">
+
+        </figure>
+        <h3>My Blog</h3>
+      </div>
+
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="http://www.dsfcode.com/wp-content/uploads/2017/02/snake-game-screen-shot.png" alt="">
+        </figure>
+        <h3>Snake Game</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+
+        </figure>
+        
+        <h3>From Image to Pixel Art</h3>
+      </div>
+
+
+      
+    </div>
+
+    <div class="about">
+      <h1>CONTACT</h1>
+      <div id="contact" >
+        <div class="contact-mail">
+           <ul>
+            <li>Gmail: <span>yoftahe.samson@gmail.com </span></li>
+            <li>Git-Hub:  <span>github.com/jephtahsamson</span></li>
+          </ul>
+        </div>
+        <div class="contact-map">
+          <img class="myLocationMap" src="img/myLocation.png" alt="">
+
+        </div>
+      </div>
+    </div>
+   
+   
+
+    
+      
+  </body>
+  <script src="JavaScript/yoftahe.j"></script> 
+  <!-- Java script code for tab options for the skills area-->
+  <script src="JavaScript/skillsTab.js"></script>
+</html>

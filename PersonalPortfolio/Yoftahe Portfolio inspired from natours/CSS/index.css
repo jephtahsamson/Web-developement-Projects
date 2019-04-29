@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 30px;
+}
+
+/* The header with the background image of bc */
+.header{
+    height: 95vh;
+
+    background-image: linear-gradient(to right bottom,
+    #041822d3, #0c1d17c4), url("https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+
+    
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+/* first top logo of bc */
+.Logo-box{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+.Logo-box img{
+    width: 4vw;
+    opacity: 0.8;
+}
+
+/* welcome text */
+.header-text-box{
+    color: black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.heading-primary{
+    font-family: 'Quantico', sans-serif;
+    text-align: center; 
+
+    /* hack method, in case the animation section is shaky 
+        backface-visibility: hidden;
+    */
+    margin-bottom: 60px;
+}
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 12px;
+  
+
+    /* animation properties */
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+.yoftahe{
+    font-weight: 900;
+    color: white;
+}
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    
+
+    /* animation properties */
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+
+/* Welcome text animations */
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Link button for discovering places in bc */
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 0.5px;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.212);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.212);
+}
+.btn-white{
+    background-color: #ecd67d;
+    color: black;
+}
+/* button animation */
+.btn-anim{
+
+    /* animation properties */
+    animation-name: moveInButtom;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    
+
+
+}
+@keyframes moveInButtom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+        
+    }
+    80%{
+        transform: translateY(-4px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

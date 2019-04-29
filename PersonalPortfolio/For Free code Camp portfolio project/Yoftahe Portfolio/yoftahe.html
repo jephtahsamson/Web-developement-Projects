@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet"> 
+    <link rel="stylesheet" href="yoftahe.css">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
+    
+    <meta charset="utf-8">
+    <title>Yoftahe Hagos Portfolio</title>
+  </head>
+
+  <body>
+    <script src="yoftahe.j"></script> 
+
+    
+    
+
+    <div class="welcome-section" id="home">
+
+     
+
+      <!-- <img id="profile-image" src="https://instagram.fyvr3-1.fna.fbcdn.net/vp/dbaae386f3ce03aac5befd7938a76d32/5D4E596F/t51.2885-15/e35/49708894_1225188757636791_605891694546605960_n.jpg?_nc_ht=instagram.fyvr3-1.fna.fbcdn.net" alt="">-->
+      <!--<img id="profile-image" src="https://avatarfiles.alphacoders.com/149/149117.jpg" alt=""> -->
+      
+      <img id="profile-image" src="img/me" alt="">
+      
+      
+      
+
+      <p id="greet-text">Hi, Im Yoftahe</p>
+      <!--
+        <p id="about-text">I am a Self Tought Software Designer With a Great Passion for Maths and The Art of Computer Programming</p>
+      
+      -->
+      
+      <h1 >
+          <a style="text-decoration: none; color: rgb(0, 0, 0); font-family: 'Special Elite', cursive;" href="" class="typewrite" data-period="5000"
+           data-type='[ "Hi, Im Yoftahe.", "I am a self tought Programmer and Designer.", "I love Math and " ]'>
+            <span class="wrap"></span>
+          </a>
+      </h1>
+    </div>
+
+  
+    
+    <div id="aboutMe">
+      <div class="child">
+        <p>
+            I am  recent highschool graduate(june 2018), and I have been teaching myself Web programming for full time, ever scince I completed my highschool diploma. My intial plan was to attend a university or college on computer science major.  After I have been accepted to a college, later I found out that I can teach myself any coding skill using such awseome, almost free, online resourses.  
+        </p>
+        <p>
+          I am a very self-desciplined and motivated person, I just love building cool stuff while also aiming to solve real world problems. I'm looking for an intern or junior positions  where I can expand and grow my basic programming knowlege.
+ 
+        </p>
+        <a href="https://github.com/jephtahsamson/Git-Test/blob/master/Yoftahe%20RESUME.pdf">Résumé</a>
+
+      </div>
+
+      <!-- Java script code for tab options for the skills area-->
+      <script>
+        function openExpertise(evt, languageName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(languageName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+
+      <div class="child">
+        <div class="tab">
+          <button class="tablinks" onclick="openExpertise(event, 'Skills')">Skills</button>
+          <button class="tablinks" onclick="openExpertise(event, 'BackEnd')">Back End</button>
+          <button class="tablinks" onclick="openExpertise(event, 'FrontEnd')">Front End</button>
+          <button class="tablinks" onclick="openExpertise(event, 'Tools')">Tools</button>
+            
+        </div>
+
+        <div id="Skills" class="tabcontent">
+         <h3>Skills</h3>
+         <ul class="design-skills">
+           <li>Object Oriented Design</li>
+           <li>Responsive Web Design</li>
+         </ul>
+
+
+        </div>
+        <div id="BackEnd" class="tabcontent">
+          <h3>BackEnd</h3>
+          <ul style="list-style: none;">
+            <li><img class="langLogo" src="https://ludu-assets.s3.amazonaws.com/course-icons/26/urA5bRhIewsQ2LgxuCu2" alt=""><span class="bar"><span class="c"></span></span></li>
+            <li><img class="langLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png" alt=""><span class="bar"><span class="python"></span></span></li>
+            <li><img class="langLogo" src="https://cdn.worldvectorlogo.com/logos/java-14.svg" alt=""><span class="bar"><span class="java"></span></span></li>
+            <li><img class="langLogo" src="http://pluspng.com/img-png/nodejs-logo-png--435.png" alt=""><span class="bar"><span class="node"></span></span></li>
+            <li><img class="langLogo" src="https://cdn-images-1.medium.com/max/1200/0*U2DmhXYumRyXH6X1.png" alt=""><span class="bar"><span class="redux"></span></span></li>
+          </ul>
+
+        </div>
+        <div id="FrontEnd" class="tabcontent">
+          <h3>FrontEnd</h3>
+          <ul style="list-style: none;">
+            <li><img class="langLogo" src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png" alt=""><span class="bar"><span class="html"></span></span></li>
+            <li><img style="width: 55px;" class="langLogo"src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt=""><span class="bar"><span class="sass"></span></span></li>
+            <li><img class="langLogo" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg" alt=""><span class="bar"><span class="bootstrap"></span></span></li>
+            <li><img class="langLogo" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt=""><span class="bar"><span class="react"></span></span></li>
+            <li><img class="langLogo" src="http://2ality.com/2011/10/logo-js/js.jpg" alt=""><span class="bar"><span class="javaScript"></span></span></li>
+
+
+
+          </ul>
+
+  
+
+        </div>
+        <div id="Tools" class="tabcontent">
+          <h3>Tools</h3>
+          <ul style="list-style: none;">
+            <li><img class="langLogo" src="https://go.tiny.cloud/wp-content/uploads/2017/04/Github-logo.png" alt=""><span class="bar"><span class="git"></span></span></li>
+            <li><img class="langLogo" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt=""><span class="bar"><span class="gitHub"></span></span></li>
+
+
+            <li><img class="langLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Visual_Studio_2017_Logo.svg/1024px-Visual_Studio_2017_Logo.svg.png" alt=""><span class="bar"><span class="vsCode"></span></span></li>
+            <li><img class="langLogo" src="https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png" alt=""><span class="bar"><span class="atom"></span></span></li>
+
+
+
+
+          </ul>
+
+        </div>
+        
+
+        
+    
+
+    
+
+       
+      </div>
+
+
+    </div>
+
+    <div id="work" class="about">
+      <h1>WORK</h1>
+    </div>
+    <div id="projects">
+      <div class="project-title">
+        
+        <a href="https://google.com">
+        <figure>
+            <img class="project-item" src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/295720.JdypaP.0ac369fa-0be6-4544-9666-74a8fe8d91be.png" alt="">
+          </figure>
+        
+        </a>
+        
+        
+        <h3>Pomodoro Clock</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="https://edge.androidcommunity.com/wp-content/uploads/2016/02/Sony-Weather-app-for-Xperia.jpg" alt="">
+
+        </figure>
+        <h3>Weather Application</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="https://static.collectui.com/shots/2884714/easy-notes-app-large" alt="">
+        </figure>
+        <h3>Simple To Do List</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="https://snipui.com/wp-content/uploads/Calculator-DailyUI-004-sn.png" alt="">
+       
+        </figure>
+        <h3>javaScript Calculator</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="https://www.coralthemes.com/wp-content/uploads/coral-dark-preview.png" alt="">
+
+        </figure>
+        <h3>My Blog</h3>
+      </div>
+
+
+      <div class="project-title">
+        <figure>
+          <img class="project-item" src="http://www.dsfcode.com/wp-content/uploads/2017/02/snake-game-screen-shot.png" alt="">
+        </figure>
+        <h3>Snake Game</h3>
+      </div>
+
+      <div class="project-title">
+        <figure>
+
+        </figure>
+        
+        <h3>From Image to Pixel Art</h3>
+      </div>
+
+
+      
+    </div>
+
+    <div class="about">
+      <h1>CONTACT</h1>
+      <div id="contact" >
+
+        <div>
+          <a href="https://github.com/jephtahsamson"><img class="contact-github" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
+          </a>
+          
+
+        </div>
+        <div>
+          <img class="contact-gmail" src="http://www.logospng.com/images/10/contact-ndash-ty-walker-10562.png" alt="">
+
+
+        </div>
+        
+              
+        
+
+      </div>
+
+      <div id="footer-png">
+        
+
+
+      </div>
+    </div>
+   
+   
+
+    
+      
+  </body>
+</html>
